@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="brandpage-mystyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script>
+      const showMore = () => {
+        const container = document.querySelector('.second-section__brandpage');
+        const text = document.getElementById('show-more-brands');
+
+
+        if (container.classList.contains('second-section__brandpage--shrink')) {
+          text.innerHTML = 'Скрыть';
+          container.classList.remove('second-section__brandpage--shrink')
+        } else {
+          text.innerHTML = 'Показать все';
+          container.classList.add('second-section__brandpage--shrink')
+        }
+
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="highlight"></div>
+      <div class="first-section">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</div>
+    </header>
+    <nav class="second-section">
+      <div class="second-section__brandpage second-section__brandpage--shrink">
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-lenovo.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div class="swiper-slide-container samsung">
+          <img class="logo" src="images/img-samsung.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-apple.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-bosch.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-hp.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-acer.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+
+        <div
+          class="swiper-slide-container second-section__high-defination__brandpage"
+        >
+          <img class="logo" src="images/img-samsung.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div
+          class="swiper-slide-container second-section__high-defination__brandpage"
+        >
+          <img class="logo" src="images/img-sony.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-sony.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-viewsonic.png" width="128px" height="21px"/>
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+        </div>
+        <div class="swiper-slide-container">
+          <img class="logo" src="images/img-lenovo.png" />
+          <svg
+            class="tap-next"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="19"
+              stroke="#FF3E79"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+              fill="#FF3E79"
+            />
+          </svg>
+      </div>
+    
+      </div>
+
+      <div class="second-section__show-more" onclick="showMore()">
+        <div class="second-section__show-more__checkmark">
+          <svg
+            class="icon"
+            width="8"
+            height="11"
+            viewBox="0 0 8 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.50008 0.500076L4.00008 3.00008L1.50008 0.500076C1.22393 0.223933 0.776218 0.223933 0.500076 0.500076C0.223933 0.776218 0.223933 1.22393 0.500075 1.50008L3.29297 4.29297C3.68349 4.68349 4.31666 4.68349 4.70718 4.29297L7.50008 1.50008C7.77622 1.22393 7.77622 0.776218 7.50008 0.500076C7.22393 0.223933 6.77622 0.223933 6.50008 0.500076ZM6.50008 6.50008L4.00008 9.00008L1.50008 6.50008C1.22393 6.22393 0.776218 6.22393 0.500076 6.50008C0.223933 6.77622 0.223933 7.22393 0.500075 7.50008L3.29297 10.293C3.68349 10.6835 4.31666 10.6835 4.70718 10.293L7.50008 7.50008C7.77622 7.22393 7.77622 6.77622 7.50008 6.50008C7.22393 6.22393 6.77622 6.22393 6.50008 6.50008Z"
+              fill="#41F6D7"
+            />
+          </svg>
+        </div>
+
+        <a class="show-more-less" id="show-more-brands">Показать все</a>
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">
+              <img class="logo" src="images/img-lenovo.png" />
+              <svg
+                class="tap-next"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="1"
+                  y="1"
+                  width="38"
+                  height="38"
+                  rx="19"
+                  stroke="#FF3E79"
+                  stroke-width="2"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                  fill="#FF3E79"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">
+              <img class="logo" src="images/img-samsung.png" />
+              <svg
+                class="tap-next"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="1"
+                  y="1"
+                  width="38"
+                  height="38"
+                  rx="19"
+                  stroke="#FF3E79"
+                  stroke-width="2"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                  fill="#FF3E79"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">
+              <img class="logo" src="images/img-apple.png" />
+              <svg
+                class="tap-next"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="1"
+                  y="1"
+                  width="38"
+                  height="38"
+                  rx="19"
+                  stroke="#FF3E79"
+                  stroke-width="2"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                  fill="#FF3E79"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">
+              <img class="logo" src="images/img-acer.png" />
+              <svg
+                class="tap-next"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="1"
+                  y="1"
+                  width="38"
+                  height="38"
+                  rx="19"
+                  stroke="#FF3E79"
+                  stroke-width="2"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z"
+                  fill="#FF3E79"
+                />
+              </svg>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </nav>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+  </body>
+</html>

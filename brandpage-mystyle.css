@@ -1,0 +1,274 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+div,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: 'TTLakes-Medium';
+  src: url(./fonts/TTLakes-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'TTLakes-Bold';
+  src: url(./fonts/TTLakes-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'TTLakes-Light';
+  src: url(./fonts/TTLakes-Light.ttf);
+}
+
+@font-face {
+  font-family: 'TTLakes-Regular';
+  src: url(./fonts/TTLakes-Regular.ttf);
+}
+
+body {
+background-color: #F8F8F8;
+}
+
+header {
+    background-color: #FFFFFF;
+    width: 100%;
+    font-family: 'TTLakes-Regular';
+    color: #7E7E82;
+
+}
+
+.highlight {
+  width: 100%;
+  height: 1px;
+  background-color: #D9FFF5;
+}
+
+.first-section {
+    padding: 15px;
+}
+
+.second-section__brandpage{
+  display: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 112px;
+  margin-top:16px;
+}
+
+.swiper-slide {
+padding-bottom: 60px;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.second-section__high-defination__brandpage {
+  display: none;
+}
+
+.swiper-slide-container {
+  border: 1px solid #EAEAEA;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: white;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+
+}
+
+.logo {
+  margin: 20px 0px 20px 16px;
+  object-fit: cover;
+}
+
+.tap-next {
+  margin: 16px 16px 16px 0px;
+}
+
+.swiper-pagination-bullet-active{
+background-color: #B5B6BC !important;
+}
+
+.swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+  background-color: #DDDDDD !important;
+}
+
+.second-section__show-more {
+  display: none;
+  margin-top: 24px;
+  margin-left: 39px;
+  flex-basis: 133px;
+}
+
+#more {
+  display: none;
+  width: 100%;
+}
+
+
+.second-section__brandpage:not(.second-section__brandpage--shrink) + .second-section__show-more .second-section__show-more__checkmark {
+  transform: rotate(180deg);
+}
+
+.second-section__show-more__checkmark {
+  padding-top: 2px;
+}
+
+@media (min-width: 768px) {
+
+  header {
+    width: 100%;
+    background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+  }
+
+  .first-section {
+    padding-top: 15px;
+    padding-left: 24px;
+}
+
+  .swiper {
+    display: none;
+  }
+
+  .swiper-slide-container {
+    flex-basis: 224px;
+    margin-bottom: 16px;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .second-section__brandpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 16px;
+  }
+
+  .second-section__high-defination__brandpage {
+    display: none;
+  }
+
+  .second-section__brandpage--shrink .swiper-slide-container:nth-child(n+7) {
+    display: none;
+ }
+
+  .second-section__show-more {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .show-more-less {
+    margin-left: 17px;
+    font-family: 'TTLakes-Medium';
+    font-size: 16px;
+  }
+
+
+}
+
+@media (min-width: 1120px) {
+
+  .first-section {
+    padding-left: 32px;
+  }
+
+  .swiper-slide-container {
+    flex-basis: 240px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  .second-section__high-defination__brandpage {
+    display: flex !important;
+  }
+
+  .second-section__brandpage {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .second-section__brandpage--shrink .swiper-slide-container:nth-child(n+9) {
+    display: none;
+ }
+
+
+}
