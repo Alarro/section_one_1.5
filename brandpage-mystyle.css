@@ -144,12 +144,36 @@ background-color: #F8F8F8;
 }
 
 .button_go-over {
-  background-image: url(images/goover.svg);
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
   width: 40px;
   margin: 16px 16px 16px 0px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 2px solid #FF3E79;
+}
+
+.waste-of-time-drawing-icons-with-elements {
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  border-top: 2px solid #FF3E79;
+  border-right: 2px solid #FF3E79;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-left: 13px;
+  margin-top: 14px;
 }
 
 .button-brand_lenovo { 
