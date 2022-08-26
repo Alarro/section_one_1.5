@@ -113,20 +113,6 @@ background-color: #F8F8F8;
   display: none;
 }
 
-.slide-button {
-  border: 0px;
-  background-color: #ffffff;
-  margin: 16px 16px 16px 0px;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px ;
-  -webkit-border-radius: 20px ;
-  -moz-border-radius: 20px ;
-  -ms-border-radius: 20px ;
-  -o-border-radius: 20px ;
-  cursor: pointer;
-}
-
 .slide_button {
   border: 1px solid #EAEAEA;
   width: 100%;
@@ -141,6 +127,11 @@ background-color: #F8F8F8;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   padding: 0;
+  cursor: pointer;
+}
+
+.slide_button:hover {
+  background-color: #B5B6BC;
 }
 
 .button_go-over {
